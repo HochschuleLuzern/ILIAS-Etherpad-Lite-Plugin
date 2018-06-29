@@ -1,3 +1,6 @@
 nbproject
 .DS_Store
 etherpadlite.ini.php
+/.buildpath
+/.settings/
+/.project
