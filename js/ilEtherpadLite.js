@@ -20,7 +20,7 @@
             height = $(window).height();
         }
         else {
-            height = $(window).height() - $('header').height() - $('div.breadcrumbs').height() - $('footer').height() - $('div.il_HeaderInner').height() - $('ul.nav-tabs').height() - 100;
+            height = $(window).height() - $('header').height() - $('div.breadcrumbs').height() - $('footer').height() - $('div.il_HeaderInner').height() - $('ul.nav').height() - 100;
         }
         repaintPad();
     }
@@ -62,6 +62,7 @@ $(function () {
     $(".labeFullscreenPad").click(function () {
         etherpadlite.toggleFullscreen();
     });
+    etherpadlite.resizePad();
 });
 
 
