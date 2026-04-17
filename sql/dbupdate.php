@@ -239,8 +239,6 @@ foreach($sql as $s)
 
 <#13>
 <?php
-    include_once("./Customizing/global/plugins/Services/Repository/RepositoryObject/EtherpadLite/classes/class.ilEtherpadLiteConfig.php");
-    require_once("./Customizing/global/plugins/Services/Repository/RepositoryObject/EtherpadLite/libs/etherpad-lite-client/etherpad-lite-client.php");
     
     $adminSettings = new ilEtherpadLiteConfig();
 		
@@ -266,7 +264,6 @@ foreach($sql as $s)
     }
     catch (Exception $e)
     {
-        include_once("./Services/UICore/exceptions/class.ilCtrlException.php");
         throw new ilCtrlException($e->getMessage());
     }
     

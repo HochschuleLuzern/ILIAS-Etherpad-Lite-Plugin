@@ -155,7 +155,6 @@ class ilObjEtherpadLiteGUI extends ilObjectPluginGUI
         
         $ilCtrl = $DIC['ilCtrl'];
 
-        include_once("Services/Form/classes/class.ilPropertyFormGUI.php");
         $this->form = new ilPropertyFormGUI();
 
         // hidden Inputfield for ID
@@ -176,7 +175,6 @@ class ilObjEtherpadLiteGUI extends ilObjectPluginGUI
         $this->form->addItem($cb);
         
         // Show Elements depending on settings in the administration of the plugin
-        include_once("./Customizing/global/plugins/Services/Repository/RepositoryObject/EtherpadLite/classes/class.ilEtherpadLiteConfig.php");
         $this->adminSettings = new ilEtherpadLiteConfig();
 
         if($this->adminSettings->getValue("allow_read_only"))
