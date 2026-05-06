@@ -408,7 +408,7 @@ class ilObjEtherpadLiteGUI extends ilObjectPluginGUI
 		    //$pad->setVariable("ETHERPADLITEID", $padID);
 
             // build javascript required to load the pad
-            $pad = new ilTemplate("tpl.pad.html", true, true, "Customizing/global/plugins/Services/Repository/RepositoryObject/EtherpadLite");
+            $pad = new ilTemplate("tpl.pad.html", true, true, "public/Customizing/global/plugins/Services/Repository/RepositoryObject/EtherpadLite");
             $pad->setVariable("ENTER_FULLSCREEN",$this->txt("enter_fullscreen"));
             $pad->setVariable("LEAVE_FULLSCREEN",$this->txt("leave_fullscreen"));
             $pad->setVariable("PROTOCOL",($this->adminSettings->getValue("https") ? "https" : "http"));
